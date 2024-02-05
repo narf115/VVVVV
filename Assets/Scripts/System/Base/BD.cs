@@ -20,8 +20,7 @@ public class BD : MonoBehaviour
     {
         Cs = GetComponent<CollectedController>();
         //pea = GetComponent<Patch>();
-        string connection = "Server=labs.inspedralbes.cat; Database=fvilches_Plataforms; Uid=fvilches_platforms; password=Plataforms115; CharSet=utf8; port= 3306";
-        conn = new MySqlConnection(connection);
+       conn = new MySqlConnection(connection);
 
         conn.Open();
        // Pos();
@@ -122,7 +121,7 @@ public class BD : MonoBehaviour
             var command = new MySqlCommand(query, conn);
           
             var reader = command.ExecuteReader();
-              Debug.Log("Dolor");
+              Debug.Log("Yes");
             // var command = new MySqlCommand(query, conn);
             //MySqlDataReader reader = command.ExecuteReader();
             //cmd = new MySqlCommand(query, conn);
